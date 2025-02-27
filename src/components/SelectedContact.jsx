@@ -20,8 +20,10 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
         {contact ? 
         <>
          <p> {contact.name} </p>
+         <p> {contact.username} </p>
          <p> {contact.email} </p>
          <p> {contact.phone} </p>
+         <p> {contact.company.name} </p>
          </>
          :
          <p> No Contact Data </p>
